@@ -4,7 +4,8 @@
 
 @layer base {
   body {
-    background-color: #00040f;
+    background: url(/src/assets/bg.png);
+    background-size: cover;
   }
 
   * {
@@ -56,7 +57,42 @@
     -webkit-text-fill-color: transparent;
   }
 
-  @media (max-width: 270px) {
+  .useerTitle {
+    background-image: radial-gradient(
+      circle,
+      #33bbcf,
+      #43c3d4,
+      #52cbd9,
+      #5fd4df,
+      #6cdce4,
+      #7ce1e8,
+      #8be7eb,
+      #99ecef,
+      #aceff2,
+      #bdf3f5,
+      #cef6f7,
+      #def9fa
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .about .card {
+    transition: all linear 0.1s;
+    -webkit-transition: all linear 0.1s;
+    -moz-transition: all linear 0.1s;
+    -ms-transition: all linear 0.1s;
+    -o-transition: all linear 0.1s;
+  }
+  .about .card:hover {
+    background-color: #ffffff15;
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+  }
+
+  @media (max-width: 650px) {
     .container {
       padding: 0 20px;
     }

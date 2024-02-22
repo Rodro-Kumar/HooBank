@@ -39,13 +39,10 @@ const Hero = () => {
             </div>
           </div>
           <div className="right relative">
-            <div className="round mt-10">
-              <img src={round} alt={round} />
-            </div>
-            <div className="card1 absolute top-24 left-0 z-30">
+            <div className="card1 absolute top-16 left-0 z-30">
               <img src={card1} alt={card1} />
             </div>
-            <div className="card2 absolute top-40 left-0 z-20 ">
+            <div className="card2 absolute top-44 left-0 z-20 ">
               <img src={card2} alt={card2} />
             </div>
             <div className="card3 absolute top-32 left-0 z-10">
@@ -53,22 +50,30 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="hand pt-44">
+        <div className="hand pt-80">
           <img src={hand} alt={hand} />
         </div>
         <div className="container">
           <div className="user text-white flex flex-col justify-center items-center gap-y-3 mt-10">
-            <div className="active flex items-center">
-              <p>3800+</p>
-              <p>User Active</p>
+            <div className="active flex items-center flex-col">
+              <p className="text-3xl font-poppins font-semibold text-white">
+                3800+
+              </p>
+              <p className="useerTitle font-poppins text-xl font-normal">
+                User Active
+              </p>
             </div>
-            <div className="company flex items-center">
-              <p>230+</p>
-              <p>TRUSTED BY COMPANY</p>
+            <div className="company flex items-center flex-col">
+              <p className="text-3xl font-poppins font-semibold text-white">
+                230+
+              </p>
+              <p className="useerTitle">TRUSTED BY COMPANY</p>
             </div>
-            <div className="Transaction flex items-center">
-              <p>$230M+</p>
-              <p>TRANSACTION</p>
+            <div className="Transaction flex items-center flex-col">
+              <p className="text-3xl font-poppins font-semibold text-white">
+                $230M+
+              </p>
+              <p className="useerTitle"> TRANSACTION</p>
             </div>
           </div>
         </div>
