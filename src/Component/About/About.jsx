@@ -23,18 +23,41 @@ const About = () => {
               </div>
             </div>
             <div>
-              <Flex className={"flex-col gap-y-7 pt-10"}>
-                <Card className={"card"} />
-                <Card className={"card"} />
-                <Card className={"card"} />
-              </Flex>
+              <div className={"flex-col pt-10  flex"}>
+                <div className="owner">
+                  <Card className={"card"} />
+                  <Card className={"card my-7"} />
+                  <Card className={"card"} />
+                </div>
+              </div>
             </div>
             <div>
               <Flex className={"pt-12 flex-col items-center gap-y-7"}>
-                <img src={company1} alt={company1} className="w-36" />
-                <img src={company2} alt={company2} className="w-36" />
-                <img src={company3} alt={company3} className="w-36" />
-                <img src={company4} alt={company4} className="w-36" />
+                <div className="company-logo">
+                  <img
+                    src={company1}
+                    alt={company1}
+                    className="w-28 cursor-pointer"
+                  />
+                  <img
+                    src={company2}
+                    alt={company2}
+                    className="w-28 cursor-pointer mt-4"
+                  />
+                </div>
+
+                <div className="company-logo">
+                  <img
+                    src={company3}
+                    alt={company3}
+                    className="w-28 cursor-pointer"
+                  />
+                  <img
+                    src={company4}
+                    alt={company4}
+                    className="w-28 cursor-pointer mt-4"
+                  />
+                </div>
               </Flex>
             </div>
           </div>

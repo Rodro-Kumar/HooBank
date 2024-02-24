@@ -23,9 +23,11 @@ const Billing = () => {
                 ametodio aenean neque. Fusce ipsum orci rhoncus aliporttitor
                 integer platea placerat.
               </p>
-              <div className="flex items-center pt-9 flex-col gap-y-4">
-                <img src={appstoreImg} alt={appstoreImg} />
-                <img src={playstoreImg} alt={playstoreImg} />
+              <div className="flex items-center pt-9 flex-col ">
+                <div className="download">
+                  <img src={appstoreImg} alt={appstoreImg} />
+                  <img src={playstoreImg} alt={playstoreImg} />
+                </div>
               </div>
             </div>
           </div>
