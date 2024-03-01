@@ -6,15 +6,19 @@ import playstoreImg from "../../assets/playstore.png";
 const Billing = () => {
   return (
     <>
-      <div>
+      <div className="bill">
         <div className="container">
-          <div className="pb-24">
+          <div className="pb-24 billing-wraper">
             <div>
               <picture>
-                <img src={billingimg} alt={billingimg} />
+                <img
+                  src={billingimg}
+                  alt={billingimg}
+                  className="bill-main-img"
+                />
               </picture>
             </div>
-            <div className="pt-3">
+            <div className="pt-3 right">
               <h4 className="font-poppins font-semibold text-3xl text-white leading-10">
                 Easily control your billing & invoicing.
               </h4>
