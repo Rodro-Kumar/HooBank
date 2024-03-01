@@ -14,9 +14,11 @@ const About = () => {
         <div className="container">
           <div>
             <div>
-              <div>
-                <Title>What people are saying about us</Title>
-                <p className="text-xs font-poppins font-normal text-white opacity-60 leading-5 pt-4">
+              <div className="about-title-wraper">
+                <Title className={"about-title"}>
+                  What people are saying about us
+                </Title>
+                <p className="text-xs font-poppins font-normal text-white opacity-60 leading-5 pt-4 about-des">
                   Everything you need to accept card payments and grow your
                   business anywhere on the planet.
                 </p>
@@ -32,7 +34,11 @@ const About = () => {
               </div>
             </div>
             <div>
-              <Flex className={"pt-12 flex-col items-center gap-y-7"}>
+              <div
+                className={
+                  "all-company pt-12 flex-col items-center gap-y-7 flex"
+                }
+              >
                 <div className="company-logo">
                   <img
                     src={company1}
@@ -58,7 +64,7 @@ const About = () => {
                     className="w-28 cursor-pointer mt-4"
                   />
                 </div>
-              </Flex>
+              </div>
             </div>
           </div>
         </div>
