@@ -11,22 +11,21 @@ const Hero = () => {
   return (
     <>
       <div className="hero">
-        <div></div>
         <div className="container">
-          <div className="py-12">
+          <div className="hero-wraper py-12">
             <div className="left">
-              <div className="discount  bg-gradient-to-l from-discountsecound to-discountfirst rounded-lg flex items-center py-1 px-[8px]">
+              <div className="discount bg-gradient-to-l from-discountsecound to-discountfirst rounded-lg flex items-center py-1 px-[8px]">
                 <img src={discountImg} alt={discountImg} className="w-6" />
                 <p className="text-white text-[8px] font-normal font-poppins text-uppercase pl-2">
                   20% <span className="opacity-[0.8]">DISCOUNT FOR</span>1 MONTH{" "}
                   <span className="opacity-[0.8]">ACCOUNT</span>
                 </p>
               </div>
-              <h1 className="font-poppins text-3xl font-semibold leading-10 pt-2 text-white pb-8">
+              <h1 className="font-poppins text-4xl font-semibold leading-10 pt-2 text-white pb-5 ">
                 The Next <span className="headingSpan">Generation</span> Payment
                 Method.
               </h1>
-              <p className="text-white opacity-[0.7] font-poppins font-normal text-[10px] leading-5">
+              <p className="text-white opacity-[0.7] font-poppins font-normal text-[10px] leading-5 hero-des">
                 Our team of experts uses a methodology to identify the credit
                 cards most likely to fit your needs. We examine annual
                 percentage rates, annual fees.
@@ -40,14 +39,16 @@ const Hero = () => {
               </div>
             </div>
             <div className="right relative">
-              <div className="card1 absolute top-16 left-0 z-30">
-                <img src={card1} alt={card1} />
-              </div>
-              <div className="card2 absolute top-44 left-0 z-20 ">
-                <img src={card2} alt={card2} />
-              </div>
-              <div className="card3 absolute top-32 left-0 z-10">
-                <img src={card3} alt={card3} />
+              <div className="all-card">
+                <div className="card1 absolute top-16 left-0 z-30">
+                  <img src={card1} alt={card1} />
+                </div>
+                <div className="card2 absolute top-44 left-0 z-20 ">
+                  <img src={card2} alt={card2} />
+                </div>
+                <div className="card3 absolute top-32 left-0 z-10">
+                  <img src={card3} alt={card3} />
+                </div>
               </div>
             </div>
           </div>
