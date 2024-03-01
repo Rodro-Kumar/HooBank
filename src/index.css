@@ -158,11 +158,123 @@
       align-items: center;
       column-gap: 30px;
     }
+
+    .owner .all-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
   }
 
   @media (min-width: 550px) {
+    .discount img {
+      width: 40px;
+    }
+
+    .discount p {
+      font-size: 15px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      line-height: 60px;
+    }
+
+    .hero .hero-des {
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    .hero .right .card1 {
+      top: 200px;
+    }
+    .hero .right .card2 {
+      top: 295px;
+    }
+    .hero .right .card3 {
+      top: 268px;
+    }
+
+    .hero .hand {
+      display: none;
+    }
+
+    .feature {
+      padding-top: 300px;
+    }
+
+    .feature h3 {
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    .feature p {
+      font-size: 14px;
+    }
+
+    .feature h5 {
+      font-size: 20px;
+    }
+
+    .reward-title {
+      font-size: 16px;
+    }
+
+    .bill h4 {
+      font-size: 40px;
+    }
+
+    .bill p {
+      font-size: 14px;
+    }
+
+    .deal h4 {
+      font-size: 40px;
+    }
+
+    .deal p {
+      font-size: 14px;
+    }
+
+    .about .about-title {
+      font-size: 40px;
+    }
+
+    .about .about-des {
+      font-size: 14px;
+    }
+
+    .service .service-title {
+      font-size: 45px;
+    }
+
+    .service p {
+      font-size: 16px;
+    }
+
+    .footer .logo img {
+      width: 170px;
+    }
+
+    .footer .logo p {
+      font-size: 15px;
+    }
+
+    .footer ul .li {
+      font-size: 18px;
+    }
+
+    .footer ul li a {
+      font-size: 16px;
+    }
     .footer .list {
-      column-gap: 110px;
+      column-gap: 100px;
+    }
+
+    .footer-bottom p {
+      font-size: 14px;
     }
     .second-list {
       column-gap: 110px;
@@ -178,6 +290,10 @@
   @media (min-width: 600px) {
     .hero-wraper {
       display: flex;
+    }
+
+    .all-card {
+      z-index: 1;
     }
 
     .owner {
@@ -208,6 +324,88 @@
     }
     .second-list {
       column-gap: 170px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero h1 {
+      width: 500px;
+      padding-top: 20px;
+      padding-bottom: 30px;
+    }
+
+    .hero-des {
+      width: 600px;
+    }
+
+    .all-company {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .billing-wraper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .billing-wraper h4 {
+      width: 388px;
+      line-height: 60px;
+      padding-bottom: 15px;
+    }
+
+    .billing-wraper p {
+      width: 378px;
+    }
+
+    .billing-wraper .bill-main-img {
+      width: 1000px;
+    }
+
+    .deal-wraper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .deal-wraper h4 {
+      width: 500px;
+      line-height: 60px;
+    }
+
+    .deal-wraper p {
+      width: 380px;
+    }
+
+    .deal-wraper .dealimg {
+      width: 442px;
+    }
+
+    .about-title-wraper {
+      display: flex;
+      align-items: center;
+      column-gap: 129px;
+      justify-content: space-between;
+    }
+
+    .about-title-wraper .about-title {
+      line-height: 60px;
+    }
+
+    .about-title-wraper p {
+      line-height: 25px;
+      padding: 0 90px;
+    }
+
+    .owner .all-content {
+      padding: 25px 50px;
+      display: block;
+      flex-direction: row;
+      justify-content: center;
+      align-items: start;
+      text-align: start;
     }
   }
 
