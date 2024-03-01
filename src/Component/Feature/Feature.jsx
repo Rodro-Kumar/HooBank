@@ -7,7 +7,7 @@ import { RiSendPlaneFill } from "react-icons/ri";
 const Feature = () => {
   return (
     <>
-      <div>
+      <div className="feature">
         <div className="container">
           <div className="py-32">
             <div className="left">
@@ -30,7 +30,7 @@ const Feature = () => {
                   <h5 className="text-base text-white font-poppins font-semibold">
                     Rewards
                   </h5>
-                  <p className="text-sm font-poppins font-normal text-white opacity-60 pt-2">
+                  <p className="text-sm font-poppins font-normal text-white opacity-60 pt-2 reward-title">
                     The best credit cards offer some tantalizing combinations of
                     promotions and prizes
                   </p>
@@ -44,7 +44,7 @@ const Feature = () => {
                   <h5 className="text-base text-white font-poppins font-semibold">
                     100% Secured
                   </h5>
-                  <p className="text-sm font-poppins font-normal text-white opacity-60 pt-2">
+                  <p className="text-sm font-poppins font-normal text-white opacity-60 pt-2 reward-title">
                     We take proactive steps make sure your information and
                     transactions are secure.
                   </p>
@@ -58,7 +58,7 @@ const Feature = () => {
                   <h5 className="text-base text-white font-poppins font-semibold">
                     Balance Transfer
                   </h5>
-                  <p className="text-sm font-poppins font-normal text-white opacity-60 pt-2">
+                  <p className="text-sm font-poppins font-normal text-white opacity-60 pt-2 reward-title">
                     A balance transfer credit card can save you a lot of money
                     in interest charges.
                   </p>
