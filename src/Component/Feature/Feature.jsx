@@ -9,7 +9,7 @@ const Feature = () => {
     <>
       <div className="feature">
         <div className="container">
-          <div className="py-32">
+          <div className="py-32 feature-wraper">
             <div className="left">
               <h3 className="text-3xl font-poppins font-semibold text-white">
                 You do the business, we’ll handle the money.
