@@ -7,7 +7,7 @@ const Service = () => {
     <>
       <div className="service">
         <div className="container">
-          <div>
+          <div className="service-wraper py-16 px-9 bg-gradient-to-l from-[#ffffff42] via-[#6D6D6D] to-[#11101D] rounded-[20px]">
             <div className="pb-4">
               <Title className={"service-title"}>
                 Let’s try our service now!
