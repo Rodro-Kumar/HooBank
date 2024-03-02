@@ -41,8 +41,6 @@
 }
 
 @layer components {
-  /* ======================= Media Query =========================*/
-
   .headingSpan {
     background: linear-gradient(
       to right,
@@ -106,6 +104,22 @@
     padding-bottom: 10px;
   }
 
+  /* ======================= Media Query =========================*/
+  @media (max-width: 768px) {
+    .getStarted {
+      display: none;
+    }
+    .user .active {
+      flex-direction: column;
+    }
+    .user .company {
+      flex-direction: column;
+    }
+    .user .Transaction {
+      flex-direction: column;
+    }
+  }
+
   @media (max-width: 650px) {
     .container {
       padding: 0 20px;
@@ -117,7 +131,8 @@
   }
 
   @media (max-width: 550px) {
-    .footer-bottom {
+    .line {
+      display: none;
       flex-direction: column;
     }
   }
@@ -283,19 +298,11 @@
     .inslight {
       display: flex;
       align-items: center;
-      column-gap: 40px;
+      justify-content: space-between;
     }
   }
 
   @media (min-width: 600px) {
-    .hero-wraper {
-      display: flex;
-    }
-
-    .all-card {
-      z-index: 1;
-    }
-
     .owner {
       display: flex;
       align-items: center;
@@ -328,6 +335,24 @@
   }
 
   @media (min-width: 768px) {
+    .user .active {
+      column-gap: 15px;
+    }
+    .user .company {
+      column-gap: 15px;
+    }
+    .user .Transaction {
+      column-gap: 15px;
+    }
+
+    .hero-heading {
+      display: flex;
+    }
+
+    .getStarted2 {
+      display: none;
+    }
+
     .hero h1 {
       width: 500px;
       padding-top: 20px;
@@ -338,12 +363,156 @@
       width: 600px;
     }
 
-    .all-company {
-      flex-direction: row;
+    .feature {
+      padding-top: 0;
+    }
+
+    .feature-wraper {
+      column-gap: 43px;
+      display: flex;
+      align-items: center;
+    }
+
+    .feature-wraper .left h3 {
+      font-size: 35px;
+      width: 423px;
+    }
+
+    .feature-wraper .left p {
+      font-size: 12px;
+      width: 375px;
+    }
+
+    .billing-wraper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .billing-wraper h4 {
+      width: 388px;
+      line-height: 60px;
+      padding-bottom: 15px;
+    }
+
+    .billing-wraper p {
+      width: 378px;
+    }
+
+    .deal-wraper {
+      padding-top: 70px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .deal-wraper h4 {
+      width: 443px;
+      font-size: 35px;
+      line-height: 60px;
+    }
+    .deal-wraper p {
+      width: 380px;
+    }
+
+    .about-title-wraper {
+      display: flex;
+      align-items: center;
+      column-gap: 129px;
+      justify-content: space-between;
+    }
+
+    .about-title-wraper .about-title {
+      line-height: 60px;
+      width: 1211px;
+      font-size: 35px;
+    }
+
+    .about-title-wraper p {
+      line-height: 25px;
+      padding: 0 0px;
+      width: 1375px;
+    }
+
+    .service-wraper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .service-wraper .service-title {
+      font-size: 35px;
+    }
+
+    .footer .list {
+      column-gap: 230px;
+    }
+
+    .second-list {
+      column-gap: 230px;
     }
   }
 
   @media (min-width: 1024px) {
+    .discount {
+      width: 422px;
+    }
+    .discount p {
+      font-size: 18px;
+    }
+    .hero-wraper {
+      position: relative;
+      display: flex;
+    }
+
+    .hero .hand {
+      display: block;
+      position: absolute;
+      right: 0px;
+      top: 159px;
+    }
+
+    .hero-wraper .right .card1 {
+      left: auto;
+    }
+    .hero-wraper .right .card2 {
+      left: auto;
+    }
+    .hero-wraper .right .card3 {
+      left: auto;
+    }
+
+    .hero .left h1 {
+      width: 647px;
+      font-size: 72px;
+      line-height: 100px;
+      font-weight: 600;
+    }
+
+    .hero .left .hero-des {
+      font-size: 18px;
+      line-height: 30px;
+      width: 484px;
+    }
+
+    .hero-heading {
+      position: relative;
+    }
+
+    .inslight .user-heading {
+      font-size: 40px;
+    }
+
+    .inslight p {
+      font-size: 20px;
+    }
+
+    .getStarted {
+      position: absolute;
+      right: 45px;
+      top: 0;
+    }
     .billing-wraper {
       display: flex;
       align-items: center;
