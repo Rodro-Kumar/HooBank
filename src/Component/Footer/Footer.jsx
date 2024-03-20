@@ -10,7 +10,7 @@ const Footer = () => {
     <>
       <div className="pt-24 footer">
         <div className="container">
-          <div className="pt-12 pb-8 border-b-2 border-[#fff4]">
+          <div className="pt-12 pb-8 border-b-2 border-[#fff4] footer-wraper">
             <div className="logo">
               <picture>
                 <img src={logo} alt={logo} />
@@ -27,55 +27,46 @@ const Footer = () => {
                     <a href="#">Content</a>
                   </li>{" "}
                   <li>
-                    <a href="#">Content</a>
+                    <a href="#">How it Works</a>
                   </li>{" "}
                   <li>
-                    <a href="#">Content</a>
+                    <a href="#">Create</a>
                   </li>{" "}
                   <li>
-                    <a href="#">Content</a>
+                    <a href="#">Explore</a>
                   </li>{" "}
                   <li>
-                    <a href="#">Content</a>
+                    <a href="#">Terms & Services</a>
                   </li>
                 </ul>
 
                 <ul>
-                  <li className="li">Usefull Links</li>
+                  <li className="li">Community</li>
                   <li>
-                    <a href="#">Content</a>
+                    <a href="#">Help Center</a>
                   </li>{" "}
                   <li>
-                    <a href="#">Content</a>
+                    <a href="#">Partners</a>
                   </li>{" "}
                   <li>
-                    <a href="#">Content</a>
+                    <a href="#">Suggestions</a>
                   </li>{" "}
                   <li>
-                    <a href="#">Content</a>
+                    <a href="#">Blog</a>
                   </li>{" "}
                   <li>
-                    <a href="#">Content</a>
+                    <a href="#">Newsletters</a>
                   </li>
                 </ul>
               </div>
 
               <ul>
-                <li className="li">Usefull Links</li>
+                <li className="li">Partner</li>
                 <li>
-                  <a href="#">Content</a>
+                  <a href="#">Our Partner</a>
                 </li>{" "}
                 <li>
-                  <a href="#">Content</a>
-                </li>{" "}
-                <li>
-                  <a href="#">Content</a>
-                </li>{" "}
-                <li>
-                  <a href="#">Content</a>
-                </li>{" "}
-                <li>
-                  <a href="#">Content</a>
+                  <a href="#">Become a Partner</a>
                 </li>
               </ul>
             </div>
@@ -86,7 +77,7 @@ const Footer = () => {
                 Copyright <span>©️</span> 2021 HooBank. All Rights Reserved.
               </p>
             </div>
-            <div className="icon flex items-center gap-x-4">
+            <div className="icon flex items-center gap-x-6">
               <a
                 href="#"
                 className="text-white text-2xl hover:text-[#5CE1E6] transition-all "
