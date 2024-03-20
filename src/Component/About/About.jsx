@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../Common/Title";
 import Card from "../Common/Card";
-import Flex from "../Common/Flex";
+
 import company1 from "../../assets/company1.png";
 import company2 from "../../assets/company2.png";
 import company3 from "../../assets/company3.png";
@@ -43,12 +43,12 @@ const About = () => {
                   <img
                     src={company1}
                     alt={company1}
-                    className="w-28 cursor-pointer"
+                    className="w-28 cursor-pointer comapany-1stLogo"
                   />
                   <img
                     src={company2}
                     alt={company2}
-                    className="w-28 cursor-pointer mt-4"
+                    className="w-28 cursor-pointer mt-4 comapany-2ndLogo"
                   />
                 </div>
 
@@ -56,12 +56,12 @@ const About = () => {
                   <img
                     src={company3}
                     alt={company3}
-                    className="w-28 cursor-pointer"
+                    className="w-28 cursor-pointer comapany-3rdLogo"
                   />
                   <img
                     src={company4}
                     alt={company4}
-                    className="w-28 cursor-pointer mt-4"
+                    className="w-28 cursor-pointer mt-4 comapany-4thLogo"
                   />
                 </div>
               </div>
