@@ -104,7 +104,13 @@
     padding-bottom: 10px;
   }
 
+  .footer ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
   /* ======================= Media Query =========================*/
+
   @media (max-width: 768px) {
     .getStarted {
       display: none;
@@ -121,6 +127,10 @@
   }
 
   @media (max-width: 650px) {
+    .nav .menu {
+      position: absolute;
+      z-index: 1;
+    }
     .container {
       padding: 0 20px;
     }
@@ -133,6 +143,13 @@
   @media (max-width: 550px) {
     .line {
       display: none;
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .footer .footer-bottom {
+      display: flex;
       flex-direction: column;
     }
   }
@@ -320,6 +337,9 @@
   }
 
   @media (min-width: 650px) {
+    .nav .menu {
+      display: none;
+    }
     .toogleMenu {
       display: none;
     }
@@ -357,6 +377,10 @@
       width: 500px;
       padding-top: 20px;
       padding-bottom: 30px;
+    }
+
+    .all-card {
+      display: none;
     }
 
     .hero-des {
@@ -496,8 +520,53 @@
       width: 484px;
     }
 
+    .hero .right .all-card {
+      display: block;
+    }
+
+    .hero .right .all-card .card1 {
+      right: 0;
+      position: relative;
+      top: 0;
+    }
+
+    .hero .right .all-card .card2 {
+      right: 0;
+      top: 60px;
+    }
+
+    .hero .right .all-card .card3 {
+      right: 0;
+      top: 132px;
+    }
+
     .hero-heading {
       position: relative;
+    }
+
+    .feature .left h3 {
+      font-size: 48px;
+      font-weight: 600;
+      width: 100%;
+      line-height: 60px;
+    }
+
+    .feature .left p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 185%;
+      width: 542px;
+    }
+
+    .feature .right h5 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .feature .right p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: auto;
     }
 
     .inslight .user-heading {
@@ -526,11 +595,14 @@
     }
 
     .billing-wraper p {
-      width: 378px;
+      font-weight: 400;
+      line-height: 160%;
+      font-size: 18px;
+      width: 500px;
     }
 
     .billing-wraper .bill-main-img {
-      width: 1000px;
+      width: 600px;
     }
 
     .deal-wraper {
@@ -540,12 +612,15 @@
     }
 
     .deal-wraper h4 {
-      width: 500px;
-      line-height: 60px;
+      font-size: 48px;
+      width: 555px;
+      line-height: 160%;
     }
 
     .deal-wraper p {
-      width: 380px;
+      line-height: 170%;
+      font-size: 18px;
+      width: 445px;
     }
 
     .deal-wraper .dealimg {
@@ -560,12 +635,13 @@
     }
 
     .about-title-wraper .about-title {
-      line-height: 60px;
+      font-size: 48px;
+      line-height: 170%;
     }
 
-    .about-title-wraper p {
-      line-height: 25px;
-      padding: 0 90px;
+    .about-title-wraper .about-des {
+      font-size: 18px;
+      line-height: 180%;
     }
 
     .owner .all-content {
@@ -575,6 +651,88 @@
       justify-content: center;
       align-items: start;
       text-align: start;
+    }
+
+    .about .all-company {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .about .all-company .company-logo:nth-child(1) {
+      column-gap: 160px;
+    }
+
+    .about .all-company .company-logo:nth-child(2) {
+      column-gap: 160px;
+    }
+
+    .company-logo .comapany-1stLogo {
+      width: 140px;
+    }
+
+    .company-logo .comapany-2ndLogo {
+      width: 140px;
+      margin-top: 0;
+    }
+
+    .company-logo .comapany-3rdLogo {
+      width: 140px;
+    }
+
+    .company-logo .comapany-4thLogo {
+      width: 140px;
+      margin-top: 0;
+    }
+
+    .service .service-title {
+      font-size: 48px;
+    }
+
+    .footer .logo p {
+      line-height: 32px;
+      width: 312px;
+      font-size: 18px;
+    }
+
+    .footer-wraper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-wraper .list {
+      column-gap: 140px;
+    }
+
+    .footer-wraper .second-list {
+      column-gap: 140px;
+    }
+
+    .footer-wraper ul {
+      width: 125px;
+    }
+
+    .footer-bottom .icon {
+      display: flex;
+      column-gap: 30px;
+    }
+  }
+
+  @media (min-width: 1241px) {
+    .about .all-company .company-logo:nth-child(1) {
+      column-gap: 220px;
+    }
+
+    .about .all-company .company-logo:nth-child(2) {
+      column-gap: 220px;
+    }
+
+    .footer-wraper .list {
+      column-gap: 200px;
+    }
+    .footer-wraper .second-list {
+      column-gap: 200px;
     }
   }
 
